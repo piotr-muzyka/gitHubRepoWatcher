@@ -59,7 +59,7 @@ From github repo, helm/githubwatcher
 ## Room for Improvement
 Well frankly quite a lot, just to mention a few:
 - Application: 
-  - catch exceptions by github access, db ...
+  - catch exceptions by github access, db,
   - make redis host and port configurable (easiest fix to make those image variables or mount a configuration file and read from it)
   - improve the tests,
 
@@ -70,5 +70,4 @@ Well frankly quite a lot, just to mention a few:
   - make helm chart cleaner, think of a better way to pass the secrets to the chart,
 
 - CI/CD
-  - build a pipeline for building a docker image, linting it (hadolint?), 
-  - 
+  - build a pipeline for building a docker image, linting it (hadolint?),
