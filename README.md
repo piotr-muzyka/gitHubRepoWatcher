@@ -32,16 +32,19 @@ List the ready features here:
 - Awesome feature 3
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
+Tested with
+- minikube
 
 ## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
+### Helm chart installation
 
-`write-your-code-here`
+#### REDIS
+`helm repo add bitnami https://charts.bitnami.com/bitnami`
+`helm install redis bitnami/redis --set serviceType=NodePort --set architecture=standalone --set auth.enabled=false`
+
+#### GITHUB WATCHER
+From github repo, helm/githubwatcher
+`helm install githubwatcher githubwatcher/ --values githubwatcher/values.yaml`
 
 
 ## Project Status
