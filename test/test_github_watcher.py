@@ -1,10 +1,9 @@
 import unittest
-import json
 
 from unittest.mock import patch
 
-from main import (get_api_repositories, list_repositories, get_db_repositories,
-                  check_for_new_repositories)
+from app.main import (get_api_repositories, list_repositories, get_db_repositories,
+                      check_for_new_repositories)
 
 
 class GithubWatcherTestCase(unittest.TestCase):
