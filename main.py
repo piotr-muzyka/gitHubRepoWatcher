@@ -12,7 +12,8 @@ class Settings:
     GITHUB_USER = os.getenv('GITHUB_USER')
     BASE_URL = f'https://api.github.com/users/{GITHUB_USER}/repos'
     HEADERS = {'Authorization': f'token {GITHUB_TOKEN}'}
-
+    REDIS_HOST = os.getenv('REDIS_HOST')
+    REDIS_PORT = os.getenv('REDIS_PORT')
 
 redis = Redis(host=Settings.REDIS_HOST, port=Settings.REDIS_PORT)
 logging.basicConfig(stream=sys.stdout, level=logging.INFO)
