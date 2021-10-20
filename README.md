@@ -1,6 +1,9 @@
 # Github Repo Watcher
 > Python app which monitors repositories of a specific user and notifies when new git repositories are created.
 
+![Test workflow](https://github.com/piotr-muzyka/gitHubRepoWatcher/actions/workflows/python-app.yml/badge.svg)
+![Lint workflow](https://github.com/piotr-muzyka/gitHubRepoWatcher/actions/workflows/pylint.yml/badge.svg)
+
 ## Table of Contents
 * [Setup](#setup)
 * [Usage](#usage)
