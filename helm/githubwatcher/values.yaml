@@ -1,15 +1,12 @@
 username: username
 password: password
-checkPeriod: "10" # interval between repo checks in seconds
-redisHost: "redis-headless"
-redisPort: "6379"
 
 replicaCount: 1
 
 image:
   repository: pmuzyka/githubwatcher
   pullPolicy: Always
-  tag: "0.3"
+  tag: "0.2"
 
 imagePullSecrets: []
 nameOverride: ""
