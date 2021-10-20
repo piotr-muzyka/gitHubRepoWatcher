@@ -7,15 +7,16 @@ import time
 import requests
 from redis import Redis
 
-logging.basicConfig(stream=sys.stdout, level=logging.INFO)
-redis = Redis(host='redis-headless', port=6379)
-
-
 class Settings:
     GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
     GITHUB_USER = os.getenv('GITHUB_USER')
     BASE_URL = f'https://api.github.com/users/{GITHUB_USER}/repos'
     HEADERS = {'Authorization': f'token {GITHUB_TOKEN}'}
+    REDIS_HOST = os.getenv('REDIS_HOST')
+    REDIS_PORT = os.getenv('REDIS_PORT')
+
+redis = Redis(host=Settings.REDIS_HOST, port=Settings.REDIS_PORT)
+logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 
 
 def get_api_repositories(base_url, headers):
