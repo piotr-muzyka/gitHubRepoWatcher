@@ -18,7 +18,7 @@ class Settings:
     HEADERS = {'Authorization': f'token {GITHUB_TOKEN}'}
 
 
-redis = Redis(host=Settings.REDIS_HOST, port=float(Settings.REDIS_PORT))
+redis = Redis(host=Settings.REDIS_HOST, port=Settings.REDIS_PORT)
 logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 
 
