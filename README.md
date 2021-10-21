@@ -20,7 +20,7 @@ Tested with:
 
 ## Usage
 
-The app is containerized and made available in [docker hub](https://hub.docker.com/repository/docker/pmuzyka/githubwatcher)  
+The app is containerized and made available in [docker hub](https://hub.docker.com/r/pmuzyka/githubwatcher)  
 The run it just with docker it needs redis running in parallel. Prior to running githubwatcher redis can be started using following command `docker run -it --rm -p 6379:6379 -d --name redis-headless redis` followed by 
 
 ### Helm chart installation
